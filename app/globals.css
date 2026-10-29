@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-600: #6b46f0;
+  --primary-700: #5530d6;
+  --primary-100: #ebe5ff;
+  --primary-50: #f6f3ff;
+  --ink: #1b1535;
+  --muted: #5b5675;
+  --accent: #f5b83d;
+  --wa: #0f7b5f;
+  --wa-hover: #0b614b;
+  --surface: #ffffff;
+  --border: #e4def7;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    color: var(--ink);
+    background-color: #faf9ff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* Accessibility: ensure minimum tap target size */
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    touch-action: manipulation;
+  }
+
+  /* Focus ring style */
+  :focus-visible {
+    outline: 2px solid var(--primary-600);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom background pattern reminiscent of the circle background */
+.bg-circle-pattern {
+  background-image: radial-gradient(circle at 10% 20%, rgba(107, 70, 240, 0.05) 0%, transparent 25%),
+    radial-gradient(circle at 90% 80%, rgba(245, 184, 61, 0.07) 0%, transparent 25%);
+}
+
+.bg-dots {
+  background-image: radial-gradient(#6b46f0 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.15;
+}
