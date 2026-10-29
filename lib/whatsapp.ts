@@ -57,3 +57,4 @@ export function getEnquiryWhatsAppUrl(details: EnquiryDetails): string {
 
   return buildWhatsAppLink(parts.join(" "));
 }
+

@@ -13,3 +13,4 @@ This document records architectural, design, and implementation decisions made d
 - **Sample Report**: Pure native SVG & CSS charts with 0 external chart library weight, adhering to 100% fictional data rules and clear disclaimers.
 - **Privacy & Safety**: Client honeypot & 3-second minimum fill time guard against bot spam. Graceful fallback directly opens WhatsApp with full prefilled enquiry details even if the database is offline or unconfigured.
 - **Claims Policy**: Zero tolerance for banned terms ("accurate", "scientifically proven", "psychometric test", "guarantee", "clinical", "diagnosis", etc.). All phrasing is supportive, honest, and indicative.
+

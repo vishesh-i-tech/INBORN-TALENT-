@@ -259,3 +259,4 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
     </div>
   );
 }
+

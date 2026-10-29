@@ -56,3 +56,4 @@ export function trackEvent<E extends AnalyticsEvent>(
     window.gtag("event", name, params as Record<string, unknown>);
   }
 }
+

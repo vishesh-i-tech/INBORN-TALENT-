@@ -109,3 +109,4 @@ VALUES (
 6. [ ] **Qualifications**: Provide counsellor certifications to enable the Qualifications block in the About page.
 7. [ ] **Session Duration**: Confirm the typical duration of a DMIT analysis and counselling session.
 8. [ ] **Testimonials**: Collect written consent from parents before publishing testimonials in Supabase.
+

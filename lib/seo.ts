@@ -162,3 +162,4 @@ export function getBreadcrumbSchema(items: { name: string; path: string }[]) {
     })),
   };
 }
+

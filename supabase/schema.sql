@@ -89,3 +89,4 @@ create policy "public read published testimonials" on public.testimonials
 
 create policy "public read published posts" on public.posts
   for select using (is_published = true);
+

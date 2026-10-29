@@ -63,3 +63,4 @@ export function MapBlock({ className = "" }: MapBlockProps) {
     </div>
   );
 }
+

@@ -279,3 +279,4 @@ export const services: ServiceItem[] = [
     keywords: ["career workshop for schools in Chhindwara", "school counselling workshop MP", "educational seminars Chhindwara"],
   },
 ];
+
