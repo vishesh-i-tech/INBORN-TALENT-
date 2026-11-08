@@ -6,6 +6,7 @@ import { getGenericWhatsAppUrl } from "@/lib/whatsapp";
 import { Container } from "@/components/ui/Container";
 import { Section } from "@/components/ui/Section";
 import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
 import { EnquiryForm } from "@/components/forms/EnquiryForm";
 import { MapBlock } from "@/components/sections/MapBlock";
 import {
@@ -60,6 +61,25 @@ export default function ContactPage() {
             <p className="mt-4 text-base sm:text-lg text-muted max-w-2xl mx-auto leading-relaxed">
               We welcome families, students, and educators. Reach out on WhatsApp or phone to confirm a slot before visiting our centre in Chhindwara.
             </p>
+
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+              <Button
+                variant="wa"
+                size="sm"
+                href={getGenericWhatsAppUrl()}
+                leftIcon={<MessageCircle className="h-4 w-4" />}
+              >
+                Chat on WhatsApp
+              </Button>
+              <Button
+                variant="secondary"
+                size="sm"
+                href={`tel:${site.primaryPhone}`}
+                leftIcon={<Phone className="h-4 w-4" />}
+              >
+                Call {site.primaryPhone}
+              </Button>
+            </div>
           </div>
         </Container>
       </section>
